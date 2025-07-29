@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>お問い合わせ</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900" rel="stylesheet">
+		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+<body class="contact">
+	<!-- ヘッダー -->
+	<header>
+		<!-- PC用 グローバルメニュー -->
+		<div class="pc-only">
+			<div class="content">
+				<div class="logo">
+					<a href="index.html">
+						<img src="./img/logo.png" alt="ロゴ">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html" data-key="home">ホーム</a></li>
+						<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+						<li><a href="season.html" data-key="season">四季の風景</a></li>
+						<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+						<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+						<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					</ul>
+				</nav>
+				<div class="translate">
+					<select id="lang-select-pc">
+						<option value="ja">日本語</option>
+						<option value="en">English</option>
+						<option value="zh-cn">簡体中文</option>
+						<option value="zh-tw">繁體字</option>
+						<option value="ko">한국어</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- SP用 ハンバーガーメニュー -->
+		<div class="sp-only">
+			<div class="hamburger" id="hamburger">
+				<div class="box">
+					<span></span>
+				</div>
+			</div>
+			<nav class="sp-nav" id="sp-nav">
+				<ul>
+					<li><a href="index.html" data-key="home">ホーム</a></li>
+					<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+					<li><a href="season.html" data-key="season">四季の風景</a></li>
+					<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+					<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+					<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					<li>
+						<div class="translate">
+							<select id="lang-select-sp">
+								<option value="ja">日本語</option>
+								<option value="en">English</option>
+								<option value="zh-cn">簡体中文</option>
+								<option value="zh-tw">繁體字</option>
+								<option value="ko">한국어</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="overlay" id="overlay"></div>
+		</div>
+	</header>
+
+  <main>
+		<!-- メインビジュアル -->
+		<section class="lower_fv">
+			<h1 data-key="contact_visual_title">お問い合わせ</h1>
+			<p data-key="contact_visual_description">以下のフォームに必要事項をご記入の上、送信してください。</p>
+		</section>
+
+		<!-- フォーム -->
+		<section class="contact_form" id="contact-form">
+			<div class="content">
+				<form action="send_mail.php" method="post" id="form">
+						<label for="name" data-key="name_label">お名前 <span>*</span></label>
+						<input type="text" id="name" name="name" required>
+
+						<label for="email" data-key="email_label">メールアドレス <span>*</span></label>
+						<input type="email" id="email" name="email" required>
+
+						<label for="message" data-key="message_label">お問い合わせ内容 <span>*</span></label>
+						<textarea id="message" name="message" required></textarea>
+
+						<label class="checkbox" data-key="privacy_policy_label">
+								<input class="check" type="checkbox" name="privacy" required>
+								<span>プライバシーポリシーに同意する</span>
+						</label>
+
+						<button type="submit" data-key="submit_label">送信</button>
+				</form>
+			</div>
+		</section>
+  </main>
+
+	<!-- フッター -->
+	<footer>
+		<p data-key="copyright">&copy; 2025 いろんな日本 特別編集局</p>
+		<ul>
+			<li><a href="https://twitter.com" data-key="twitter">Twitter</a></li>
+			<li><a href="https://facebook.com" data-key="facebook">Facebook</a></li>
+		</ul>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/translate.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>

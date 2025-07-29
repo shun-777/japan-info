@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>日本の観光スポット</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900" rel="stylesheet">
+		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+<body class="sightseeing">
+	<!-- ヘッダー -->
+	<header>
+		<!-- PC用 グローバルメニュー -->
+		<div class="pc-only">
+			<div class="content">
+				<div class="logo">
+					<a href="index.html">
+						<img src="./img/logo.png" alt="ロゴ">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html" data-key="home">ホーム</a></li>
+						<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+						<li><a href="season.html" data-key="season">四季の風景</a></li>
+						<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+						<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+						<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					</ul>
+				</nav>
+				<div class="translate">
+					<select id="lang-select-pc">
+						<option value="ja">日本語</option>
+						<option value="en">English</option>
+						<option value="zh-cn">簡体中文</option>
+						<option value="zh-tw">繁體字</option>
+						<option value="ko">한국어</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- SP用 ハンバーガーメニュー -->
+		<div class="sp-only">
+			<div class="hamburger" id="hamburger">
+				<div class="box">
+					<span></span>
+				</div>
+			</div>
+			<nav class="sp-nav" id="sp-nav">
+				<ul>
+					<li><a href="index.html" data-key="home">ホーム</a></li>
+					<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+					<li><a href="season.html" data-key="season">四季の風景</a></li>
+					<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+					<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+					<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					<li>
+						<div class="translate">
+							<select id="lang-select-sp">
+								<option value="ja">日本語</option>
+								<option value="en">English</option>
+								<option value="zh-cn">簡体中文</option>
+								<option value="zh-tw">繁體字</option>
+								<option value="ko">한국어</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="overlay" id="overlay"></div>
+		</div>
+	</header>
+
+	<main>
+		<!-- メインビジュアル -->
+		<section class="lower_fv">
+			<h1 data-key="sightseeing_visual_title">日本の観光スポット</h1>
+			<p data-key="sightseeing_visual_description">都市・自然・歴史・温泉、さまざまな魅力が詰まった観光地をご紹介します。</p>
+		</section>
+
+		<!-- 都市観光 -->
+		<section class="city">
+			<div class="content">
+				<h2 data-key="city_title">都市観光 <span class="inline-block" data-key="city_sub_title">- 活気あふれる街並み</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/sightseeing_city.jpg" alt="都市観光" data-key="city_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="city_description">日本の都市には、伝統と最先端が共存しています。ショッピングやグルメ、エンターテインメントを楽しめる場所が数多くあります。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 自然観光 -->
+		<section class="nature">
+			<div class="content">
+				<h2 data-key="nature_title">自然観光 <span class="inline-block" data-key="nature_sub_title">- 四季を感じる絶景</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/sightseeing_nature.jpg" alt="自然観光" data-key="nature_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="nature_description">日本には山や湖、海岸線など、多彩な自然が広がっています。四季折々の景色を楽しめるスポットが全国に点在しています。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 歴史的建造物 -->
+		<section class="architecture">
+			<div class="content">
+				<h2 data-key="architecture_title">歴史的建造物 <span class="inline-block" data-key="architecture_sub_title">- 時を超える遺産</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/sightseeing_architecture.jpg" alt="歴史的建造物" data-key="architecture_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="architecture_description">日本には、城や神社仏閣など、歴史を感じられる建造物が多く残されています。伝統的な建築美を楽しむことができます。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 温泉観光 -->
+		<section class="onsen">
+			<div class="content">
+				<h2 data-key="onsen_title">温泉 <span class="inline-block" data-key="onsen_sub_title">- 癒しのひととき</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/sightseeing_onsen.jpg" alt="温泉観光" data-key="onsen_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="onsen_description">全国に点在する温泉地では、美しい景観とともに心身を癒す時間を過ごせます。露天風呂や足湯など、さまざまなスタイルの温泉を楽しめます。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+  
+	<!-- フッター -->
+	<footer>
+		<p data-key="copyright">&copy; 2025 いろんな日本 特別編集局</p>
+		<ul>
+			<li><a href="https://twitter.com" data-key="twitter">Twitter</a></li>
+			<li><a href="https://facebook.com" data-key="facebook">Facebook</a></li>
+		</ul>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/translate.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>

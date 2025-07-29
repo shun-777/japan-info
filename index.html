@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>トップページ</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900" rel="stylesheet">
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="index">
+	<!-- ヘッダー -->
+	<header>
+		<!-- PC用 グローバルメニュー -->
+		<div class="pc-only">
+			<div class="content">
+				<div class="logo">
+					<a href="index.html">
+						<img src="./img/logo.png" alt="ロゴ">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html" data-key="home">ホーム</a></li>
+						<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+						<li><a href="season.html" data-key="season">四季の風景</a></li>
+						<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+						<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+						<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					</ul>
+				</nav>
+				<div class="translate">
+					<select id="lang-select-pc">
+						<option value="ja">日本語</option>
+						<option value="en">English</option>
+						<option value="zh-cn">簡体中文</option>
+						<option value="zh-tw">繁體字</option>
+						<option value="ko">한국어</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- SP用 ハンバーガーメニュー -->
+		<div class="sp-only">
+			<div class="hamburger" id="hamburger">
+				<div class="box">
+					<span></span>
+				</div>
+			</div>
+			<nav class="sp-nav" id="sp-nav">
+				<ul>
+					<li><a href="index.html" data-key="home">ホーム</a></li>
+					<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+					<li><a href="season.html" data-key="season">四季の風景</a></li>
+					<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+					<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+					<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					<li>
+						<div class="translate">
+							<select id="lang-select-sp">
+								<option value="ja">日本語</option>
+								<option value="en">English</option>
+								<option value="zh-cn">簡体中文</option>
+								<option value="zh-tw">繁體字</option>
+								<option value="ko">한국어</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="overlay" id="overlay"></div>
+		</div>
+	</header>
+
+	<main>
+		<!-- メインビジュアル -->
+		<div class="section">
+			<div class="sliderArea">
+				<div class="slider">
+					<div class="item">
+						<img src="./img/season1-1.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season1-2.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season1-3.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season2-1.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season2-2.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season2-3.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season2-4.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season3-1.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season3-2.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season3-3.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season3-4.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season4-1.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season4-2.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season4-3.png" alt="">
+					</div>
+					<div class="item">
+						<img src="./img/season4-4.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 日本の魅力 -->
+		<section class="content-section charm">
+			<div class="left">
+				<div class="image">
+					<img src="./img/index_charm.jpg" alt="日本の魅力"	data-key="charm_image_alt">
+				</div>
+			</div>
+			<div class="right">
+				<div class="text">
+					<h2 data-key="japan_charm">日本の魅力</h2>
+					<p data-key="japan_charm_desc">日本には、四季折々の美しい風景、長い歴史を持つ文化、そして心温まるおもてなしの精神があります。古き良き伝統と最先端の技術が融合し、人々に驚きと感動を与えます。</p>
+					<a href="charm.html" class="btn" data-key="more_details">詳しく見る</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- 四季の風景 -->
+		<section class="content-section season">
+			<div class="left">
+				<div class="image">
+					<img src="./img/index_season.jpg" alt="四季の風景" data-key="season_image_alt">
+				</div>
+			</div>
+			<div class="right">
+				<div class="text">
+					<h2 data-key="season_landscape">四季の風景</h2>
+        	<p data-key="season_desc">春は桜、夏は緑が生い茂る山々、秋は紅葉、冬は雪景色。四季の移ろいが、日本の風景に豊かな表情を与えます。季節ごとに異なる魅力を楽しめるのが日本の醍醐味です。</p>
+        	<a href="season.html" class="btn" data-key="more_details">詳しく見る</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- 伝統文化 -->
+		<section class="content-section traditional">
+			<div class="left">
+				<div class="image">
+					<img src="./img/index_traditional.jpg" alt="伝統文化" data-key="traditional_image_alt">
+				</div>
+			</div>
+			<div class="right">
+				<div class="text">
+					<h2 data-key="traditional_culture">伝統文化</h2>
+        	<p data-key="traditional_desc">茶道、華道、書道、そして能や歌舞伎など、日本には独自の文化が数多く存在します。これらの伝統文化は、今もなお大切に受け継がれ、国内外から注目を集めています。</p>
+        	<a href="traditional.html" class="btn" data-key="more_details">詳しく見る</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- 観光スポット -->
+		<section class="content-section sightseeing">
+			<div class="left">
+				<div class="image">
+					<img src="./img/index_sightseeing.jpg" alt="観光スポット" data-key="sightseeing_image_alt">
+				</div>
+			</div>
+			<div class="right">
+				<div class="text">
+					<h2 data-key="sightseeing_spots">観光スポット</h2>
+        	<p data-key="sightseeing_desc">歴史ある寺社仏閣、美しい自然、近代的な都市風景など、日本には訪れる価値のあるスポットがたくさんあります。地域ごとに異なる魅力を楽しめるのも大きな特徴です。</p>
+        	<a href="sightseeing.html" class="btn" data-key="more_details">詳しく見る</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- お問い合わせ -->
+		<section class="content-section contact">
+			<div class="text">
+				<h2 data-key="contact_us">お問い合わせ</h2>
+      	<p data-key="contact_desc">ご質問やご意見がありましたら、お気軽にお問い合わせください。日本の魅力をより多くの人に知ってもらえるよう、皆様のご意見をお待ちしております。</p>
+      	<a href="contact.html" class="btn" data-key="contact_btn">お問い合わせ</a>
+			</div>
+		</section>
+
+	</main>
+
+
+	<!-- フッター -->
+	<footer>
+		<p data-key="copyright">&copy; 2025 いろんな日本 特別編集局</p>
+		<ul>
+			<li><a href="https://twitter.com" data-key="twitter">Twitter</a></li>
+			<li><a href="https://facebook.com" data-key="facebook">Facebook</a></li>
+		</ul>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/translate.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>

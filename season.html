@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>日本の四季</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900" rel="stylesheet">
+		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+<body class="season">
+	<!-- ヘッダー -->
+	<header>
+		<!-- PC用 グローバルメニュー -->
+		<div class="pc-only">
+			<div class="content">
+				<div class="logo">
+					<a href="index.html">
+						<img src="./img/logo.png" alt="ロゴ">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html" data-key="home">ホーム</a></li>
+						<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+						<li><a href="season.html" data-key="season">四季の風景</a></li>
+						<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+						<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+						<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					</ul>
+				</nav>
+				<div class="translate">
+					<select id="lang-select-pc">
+						<option value="ja">日本語</option>
+						<option value="en">English</option>
+						<option value="zh-cn">簡体中文</option>
+						<option value="zh-tw">繁體字</option>
+						<option value="ko">한국어</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- SP用 ハンバーガーメニュー -->
+		<div class="sp-only">
+			<div class="hamburger" id="hamburger">
+				<div class="box">
+					<span></span>
+				</div>
+			</div>
+			<nav class="sp-nav" id="sp-nav">
+				<ul>
+					<li><a href="index.html" data-key="home">ホーム</a></li>
+					<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+					<li><a href="season.html" data-key="season">四季の風景</a></li>
+					<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+					<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+					<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					<li>
+						<div class="translate">
+							<select id="lang-select-sp">
+								<option value="ja">日本語</option>
+								<option value="en">English</option>
+								<option value="zh-cn">簡体中文</option>
+								<option value="zh-tw">繁體字</option>
+								<option value="ko">한국어</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="overlay" id="overlay"></div>
+		</div>
+	</header>
+
+	<main>
+		<!-- メインビジュアル -->
+		<section class="lower_fv">
+			<h1 data-key="season_visual_title">>四季の風景</h1>
+			<p data-key="season_visual_description">日本ならではの美しい四季の風景をご紹介</p>
+		</section>
+
+		<!-- 春 -->
+		<section class="spring">
+			<div class="content">
+				<h2 data-key="spring_title">春 <span class="inline-block" data-key="spring_sub_title">- 桜と新緑の季節</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/season_spring.jpg" alt="春の景色" data-key="spring_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="spring_description">春は、桜や色とりどりの花々が咲き誇る季節です。穏やかな気候の中、新しい季節の訪れを感じることができます。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 夏 -->
+		<section class="summer">
+			<div class="content">
+				<h2 data-key="summer_title">夏 <span class="inline-block" data-key="summer_sub_title">- 太陽が降り注ぐ季節</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/season_summer.jpg" alt="夏の景色" data-key="summer_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="summer_description">夏は、太陽が輝き、自然が生き生きとする季節です。海や山など、アウトドアを楽しむのに最適な時期です。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 秋 -->
+		<section class="autumn">
+			<div class="content">
+				<h2 data-key="autumn_title">秋 <span class="inline-block" data-key="autumn_sub_title">- 色づく紅葉の季節</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/season_autumn.jpg" alt="秋の景色" data-key="autumn_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="autumn_description">秋は、木々が美しく色づき、落ち着いた雰囲気が広がる季節です。澄んだ空気とともに、自然の変化を楽しめます。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 冬 -->
+		<section class="winter">
+			<div class="content">
+				<h2 data-key="winter_title">冬 <span class="inline-block" data-key="winter_sub_title">- 静寂と雪景色の季節</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/season_winter.jpg" alt="冬の景色" data-key="winter_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="winter_description">冬は、雪景色が広がり、心落ち着く時間が流れる季節です。寒さの中で温かさを感じるひとときを楽しめます。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+  
+	<!-- フッター -->
+	<footer>
+		<p data-key="copyright">&copy; 2025 いろんな日本 特別編集局</p>
+		<ul>
+			<li><a href="https://twitter.com" data-key="twitter">Twitter</a></li>
+			<li><a href="https://facebook.com" data-key="facebook">Facebook</a></li>
+		</ul>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/translate.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>

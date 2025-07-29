@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>日本の伝統文化</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900" rel="stylesheet">
+		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+<body class="traditional">
+	<!-- ヘッダー -->
+	<header>
+		<!-- PC用 グローバルメニュー -->
+		<div class="pc-only">
+			<div class="content">
+				<div class="logo">
+					<a href="index.html">
+						<img src="./img/logo.png" alt="ロゴ">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html" data-key="home">ホーム</a></li>
+						<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+						<li><a href="season.html" data-key="season">四季の風景</a></li>
+						<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+						<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+						<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					</ul>
+				</nav>
+				<div class="translate">
+					<select id="lang-select-pc">
+						<option value="ja">日本語</option>
+						<option value="en">English</option>
+						<option value="zh-cn">簡体中文</option>
+						<option value="zh-tw">繁體字</option>
+						<option value="ko">한국어</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- SP用 ハンバーガーメニュー -->
+		<div class="sp-only">
+			<div class="hamburger" id="hamburger">
+				<div class="box">
+					<span></span>
+				</div>
+			</div>
+			<nav class="sp-nav" id="sp-nav">
+				<ul>
+					<li><a href="index.html" data-key="home">ホーム</a></li>
+					<li><a href="charm.html" data-key="charm">日本の魅力</a></li>
+					<li><a href="season.html" data-key="season">四季の風景</a></li>
+					<li><a href="traditional.html" data-key="traditional">伝統文化</a></li>
+					<li><a href="sightseeing.html" data-key="sightseeing">観光スポット</a></li>
+					<li><a href="contact.html" data-key="contact">お問い合わせ</a></li>
+					<li>
+						<div class="translate">
+							<select id="lang-select-sp">
+								<option value="ja">日本語</option>
+								<option value="en">English</option>
+								<option value="zh-cn">簡体中文</option>
+								<option value="zh-tw">繁體字</option>
+								<option value="ko">한국어</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="overlay" id="overlay"></div>
+		</div>
+	</header>
+
+	<main>
+		<!-- メインビジュアル -->
+		<section class="lower_fv">
+			<h1 data-key="traditional_visual_title">日本の伝統文化</h1>
+			<p data-key="traditional_visual_description">受け継がれる美しさと技、心を伝える日本の文化をご紹介します。</p>
+		</section>
+
+		<!-- 日本の伝統芸術 -->
+		<section class="art">
+			<div class="content">
+				<h2 data-key="art_title">伝統芸術 <span class="inline-block" data-key="art_sub_title">- 美と表現の世界</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/traditional_art.jpg" alt="日本の伝統芸術" data-key="art_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="art_content">日本の芸術文化は、書道・茶道・華道など、静けさと調和を大切にしたものが多くあります。舞台芸術としての能や歌舞伎も、独特の美しさを持っています。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 日本の食文化 -->
+		<section class="wasyoku">
+			<div class="content">
+				<h2 data-key="wasyoku_title">食文化 <span class="inline-block" data-key="wasyoku_sub_title">- 旬を楽しむ味わい</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/traditional_wasyoku.jpg" alt="和食" data-key="wasyoku_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="wasyoku_content">和食は、季節の食材を活かし、五感で楽しむ食文化です。寿司、懐石料理、和菓子など、日本ならではの味わいが受け継がれています。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 日本の伝統工芸 -->
+		<section class="craft">
+			<div class="content">
+				<h2 data-key="craft_title">伝統工芸 <span class="inline-block" data-key="craft_sub_title">- 受け継がれる職人技</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/traditional_craft.jpg" alt="日本の伝統工芸" data-key="craft_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="craft_content">陶器や漆器、和紙や織物など、日本の伝統工芸は、細やかな技とこだわりが詰まったものばかりです。一つひとつが職人の手によって生み出されています。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 日本の伝統行事 -->
+		<section class="festival">
+			<div class="content">
+				<h2 data-key="festival_title">伝統行事 <span class="inline-block" data-key="festival_sub_title">- 季節を彩る祭り</span></h2>
+				<div class="flex">
+					<div class="left">
+						<img src="./img/traditional_festival.jpg" alt="日本の伝統行事" data-key="festival_image_alt">
+					</div>
+					<div class="right">
+						<p data-key="festival_content">日本には、四季折々の行事があります。お正月やひな祭り、夏祭りやお盆、年末の行事など、古くから続く風習が人々の暮らしを彩ります。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+  
+	<!-- フッター -->
+	<footer>
+		<p data-key="copyright">&copy; 2025 いろんな日本 特別編集局</p>
+		<ul>
+			<li><a href="https://twitter.com" data-key="twitter">Twitter</a></li>
+			<li><a href="https://facebook.com" data-key="facebook">Facebook</a></li>
+		</ul>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/translate.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
