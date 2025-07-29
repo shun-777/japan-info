@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function fetchTranslations(lang) {
-    fetch("/lang/lang.json")
+    fetch("lang/lang.json")
       .then(response => response.json())
       .then(data => {
         ["header", "footer", "btn", "index", "charm", "season", "traditional", "sightseeing", "contact"]
